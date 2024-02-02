@@ -1,0 +1,302 @@
+.navbar brand{
+    img {
+        width:200px;
+        height:300px;
+      }
+}
+
+
+.nav-item{
+    padding-left: 30px;
+}
+.c-item{
+    height: 480px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.overview{
+    min-height: 180px;
+    background-color:white;
+}
+.customer{
+    background-color: rgb(174, 166, 166);
+}
+
+:root {
+    --orange: #605e5d;
+    --darkorange: #201d1b;
+    --platinum: #e5e5e5;
+    --black: #2b2d42;
+    --white: #fff;
+    --thumb: #edf2f4;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font: 16px / 24px "Rubik", sans-serif;
+    color: var(--black);
+    background: var(--platinum);
+    margin: 50px 0;
+  }
+  
+  .container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+  }
+  
+  .cards {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-column-gap: 10px;
+    grid-auto-flow: column;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+   
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  
+  .card:hover {
+    color: var(--white);
+    background: var(--orange);
+  }
+  
+  .card .card-title {
+    font-size: 20px;
+  }
+  
+  .card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+  }
+  
+  .card .card-link-wrapper {
+    margin-top: auto;
+  }
+  
+  .card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--orange);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .card:hover .card-link {
+    background: var(--darkorange);
+  }
+  
+  .cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: var(--darkorange);
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+  }
+  
+  @media (min-width: 500px) {
+    .cards {
+      grid-auto-columns: calc(50% - 10px);
+      grid-column-gap: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .cards {
+      grid-auto-columns: calc(calc(100% / 3) - 20px);
+      grid-column-gap: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .cards {
+      grid-auto-columns: calc(25% - 30px);
+      grid-column-gap: 40px;
+    }
+  }
+  
+  .border{
+    background-color: white;
+    height: 100px; 
+  }
+
+
+  .greenbox{
+    background-image: url("https://i.pinimg.com/736x/a5/af/27/a5af27cc621eb0ed0cef0f4d4152a101.jpg");
+     color: #fff;
+  }
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float three columns side by side */
+  .column {
+    
+    float: left;
+    width: 33.3%;
+    padding: 10px 10px;
+    display: inline-block;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 1000px) {
+    .column {
+      width: 50%;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+    padding: 12px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 30px 0 rgba(0,0,0,0.4);
+  }
+  
+  img {
+    border-radius: 10px 10px 10px 10px;
+  }
+
+.imagepic{
+    background-color: #fff;
+    background-image: url('https://www.velstechnologies.in/images/siteimg-joosa5.png');
+    height:550px;
+    width: 1200px;
+    margin-left: 200px;
+}
+
+.logo {
+    background-color: #ffffff;  /* Use full hexadecimal value */
+    background-image: url('https://www.velstechnologies.in/images/client-logo1.png'),
+    url('https://www.velstechnologies.in/images/client-logo1.png'),
+    url('https://www.velstechnologies.in/images/client-logo1.png'),
+    url('https://www.velstechnologies.in/images/client-logo1.png'),
+    url('https://www.velstechnologies.in/images/client-logo1.png');
+    height: 40px;
+    width: 430px;
+    margin-left: 550px;
+    margin-right: 150px;
+    padding-right: 100px;  /* Use padding-right for clarity */
+    margin-top: 30px;
+    
+}
+
+
+.contact{
+  background-color: orange;
+  height:175px;
+  color: #ffffff;
+  
+
+  h2{
+    padding-top: 50px;
+  }
+}
+.smallblack{
+    background-color: #36373e;
+    height: 80px;
+
+}
+.copywright{
+    background-color: black;
+    color:rgb(122, 119, 116);
+    height:px;
+}
+
+
+  /* FOOTER STYLES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .page-footer {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .page-footer a {
+    display: flex;
+    margin-left: 4px;
+  }
+
+.ROW{
+    min-height: 50px;
+}
+.col-xl{
+    padding:   70px;
+}
